@@ -46,5 +46,29 @@ header #navbarPort .nav-item:hover::after{
     width: 100%;
 }
 /* carousel */
-
+.myCarousel #carouselPort .carousel-item {
+    height: 100vh;
+    position: relative;
+}
+.myCarousel #carouselPort .carousel-item::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.myCarousel #carouselPort .carousel-item img {
+    height: 100%;
+}
+/* .carousel-item .carousel__overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.664);
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
 
