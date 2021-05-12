@@ -7,3 +7,34 @@ html, body {
     font-family: 'Hind', sans-serif;
     font-size: 16px;
 }
+/* header */
+header .navbar-brand {
+    font-size: 2.2rem;
+    color: white;
+}
+header .navbar-brand i {
+    font-size: 3rem;
+    color: green;
+}
+
+header #navbarPort li {
+    margin-right: 20px;  
+}
+header #navbarPort .nav-link {
+    color: white;
+    transition: all .5s;
+}
+header #navbarPort .nav-link:hover {
+    color: green;
+}
+header #navbarPort .nav-item::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: green;
+    display: block;
+    transition: all .5s;
+}
+header #navbarPort .nav-item:hover::after{
+    width: 100%;
+}
