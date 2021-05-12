@@ -46,6 +46,9 @@ header #navbarPort .nav-item:hover::after{
     width: 100%;
 }
 /* carousel */
+.myCarousel {
+    position: relative;
+}
 .myCarousel #carouselPort .carousel-item {
     height: 100vh;
     position: relative;
