@@ -3,11 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
     font-family: 'Hind', sans-serif;
     font-size: 16px;
 }
+
+
 /* header */
+
 header {
     width: 100%;
     position: absolute;
@@ -15,25 +20,30 @@ header {
     transform: translateX(-50%);
     z-index: 100;
 }
+
 header .navbar-brand {
     font-size: 2.2rem;
     color: white;
 }
+
 header .navbar-brand i {
     font-size: 3rem;
     color: green;
 }
 
 header #navbarPort li {
-    margin-right: 20px;  
+    margin-right: 20px;
 }
+
 header #navbarPort .nav-link {
     color: white;
     transition: all .5s;
 }
+
 header #navbarPort .nav-link:hover {
     color: green;
 }
+
 header #navbarPort .nav-item::after {
     content: '';
     width: 0%;
@@ -42,12 +52,15 @@ header #navbarPort .nav-item::after {
     display: block;
     transition: all .5s;
 }
-header #navbarPort .nav-item:hover::after{
+
+header #navbarPort .nav-item:hover::after {
     width: 100%;
 }
+
 #navbarPort .navbar-nav .active a {
     color: green;
 }
+
 #navbarPort .navbar-nav .active::after {
     content: '';
     width: 100%;
@@ -55,14 +68,19 @@ header #navbarPort .nav-item:hover::after{
     background-color: green;
     display: block;
 }
+
+
 /* carousel */
+
 .myCarousel #carouselPort .carousel-item {
     height: 100vh;
     position: relative;
 }
+
 .myCarousel #carouselPort .carousel-item img {
     height: 100%;
 }
+
 .myCarousel #carouselPort .carousel-item::after {
     content: '';
     width: 100%;
@@ -73,9 +91,12 @@ header #navbarPort .nav-item:hover::after{
     left: 0;
     top: 0;
 }
+
 .myCarousel #carouselPort .carousel-item img {
     height: 100%;
 }
+
+
 /* .carousel-item .carousel__overlay {
     width: 100%;
     height: 100%;
@@ -84,6 +105,7 @@ header #navbarPort .nav-item:hover::after{
     top: 0;
     left: 0;
 } */
+
 .carousel-caption .carousel__avt {
     width: 130px;
     border-radius: 50%;
@@ -92,40 +114,69 @@ header #navbarPort .nav-item:hover::after{
     background-color: rgba(39, 43, 54, 0.5);
     backdrop-filter: blur(3px);
 }
+
 .carousel-caption .carousel__avt div {
     width: 100%;
     padding: 8px;
     background-color: rgba(128, 128, 128, 0.459);
     border-radius: 50%;
 }
+
 .carousel-caption .carousel__avt img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    
 }
+
 .carousel-item .carousel-caption {
     top: 50%;
     left: 50%;
-    transform: translate( -50% , -50%);
+    transform: translate( -50%, -50%);
     width: 50%;
     font-size: 1.5rem;
 }
+
 .carousel-item .carousel-caption h5 {
     font-size: 3.5rem;
     font-weight: 300;
 }
+
 #carouselPort .carousel-indicators {
     bottom: 50px;
 }
+
 #carouselPort .carousel-indicators li {
     width: 12px;
     height: 12px;
     border-radius: 50%;
 }
+
 #carouselPort .carousel-indicators .active {
     background-color: green;
 }
+
+
 /* welcome */
 
+.welcome .welcome__title {
+    width: 65%;
+}
 
+.welcome .welcome__title h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.welcome .welcome__detail .progress {
+    height: 5px;
+}
+
+.welcome__detail .progress .progress-bar {
+    background: linear-gradient(to right, #35a22c, #0ea8cf);
+}
+
+.welcome .welcome__detail h4 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
