@@ -45,20 +45,30 @@ header #navbarPort .nav-item::after {
 header #navbarPort .nav-item:hover::after{
     width: 100%;
 }
-/* carousel */
-.myCarousel {
-    position: relative;
+#navbarPort .navbar-nav .active a {
+    color: green;
 }
+#navbarPort .navbar-nav .active::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: green;
+    display: block;
+}
+/* carousel */
 .myCarousel #carouselPort .carousel-item {
     height: 100vh;
     position: relative;
+}
+.myCarousel #carouselPort .carousel-item img {
+    height: 100%;
 }
 .myCarousel #carouselPort .carousel-item::after {
     content: '';
     width: 100%;
     height: 100%;
     display: block;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(39, 43, 54, 0.5);
     position: absolute;
     left: 0;
     top: 0;
@@ -74,4 +84,48 @@ header #navbarPort .nav-item:hover::after{
     top: 0;
     left: 0;
 } */
+.carousel-caption .carousel__avt {
+    width: 130px;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 8px;
+    background-color: rgba(39, 43, 54, 0.5);
+    backdrop-filter: blur(3px);
+}
+.carousel-caption .carousel__avt div {
+    width: 100%;
+    padding: 8px;
+    background-color: rgba(128, 128, 128, 0.459);
+    border-radius: 50%;
+}
+.carousel-caption .carousel__avt img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+.carousel-item .carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50%);
+    width: 50%;
+    font-size: 1.5rem;
+}
+.carousel-item .carousel-caption h5 {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+#carouselPort .carousel-indicators {
+    bottom: 50px;
+}
+#carouselPort .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+#carouselPort .carousel-indicators .active {
+    background-color: green;
+}
+/* welcome */
+
 
