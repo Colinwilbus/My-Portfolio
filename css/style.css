@@ -158,6 +158,22 @@ header #navbarPort .nav-item:hover::after {
 
 /* welcome */
 
+.welcome {
+    position: relative;
+}
+
+.welcome .welcome__overlay {
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/memphis_2.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+}
+
 .welcome .welcome__title {
     width: 65%;
 }
@@ -180,3 +196,6 @@ header #navbarPort .nav-item:hover::after {
     font-weight: 700;
     margin-bottom: 15px;
 }
+
+
+/* hire */
